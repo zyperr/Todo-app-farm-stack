@@ -1,0 +1,71 @@
+@import url("../base/variables.css");
+
+.card{
+    display: flex;
+    width: 402px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--dm-color-bg-accent);
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+.card.completed{
+    border:1px inset var(--border-succes);
+}
+.card-title{
+    font-size: var(--font-size-xl);
+    margin: 0 0.5rem;
+    padding: .3125rem 10px;
+}
+.card-description{
+    font-size: var(--font-size-md);
+    margin: 0 0.5rem;
+    padding: .3125rem 10px;
+}
+
+.card-buttons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+.card-button{
+    margin: 5px 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.card-button:hover{
+    background-color: var(--dm-color-bg-secondary);
+    transition: background 250ms ease;
+}
+
+.--checked{
+    background: var(--dm-color-bg-secondary);
+}
+.card-button.--checked:hover{
+    background-color: #fff;
+}
+@media screen and (max-width: 800px) {
+    .card{
+        width: 100%;
+        flex-direction: column;
+        
+    }
+    .card-title,
+    .card-description{
+        max-width: 150px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;        
+    }
+}
+@media screen and (min-width: 600px) {
+
+    .card-title,
+    .card-description{
+        max-width: 150px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }   
+}

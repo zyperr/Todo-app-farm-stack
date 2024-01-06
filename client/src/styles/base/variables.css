@@ -1,0 +1,37 @@
+:root{
+    --color-primary: #5d6aff;   
+    --color-secondary: #ff69b4; 
+    --color-accent: #ffcc5c;    
+  
+    /* Dark mode*/
+    --dm-color-text: #ffffff;       
+    --dm-color-text-secondary: #c7c7c7; 
+  
+    --dm-color-bg-primary: #1a202c;  
+    --dm-color-bg-secondary: #2d3748; 
+    --dm-color-bg-accent: #4a5568;    
+
+    /*Light mode*/
+  --lm-color-text: #333333;        
+  --lm-color-text-secondary: #666666; 
+
+  
+  --lm-color-bg-primary: #ffffff;   
+  --lm-color-bg-secondary: #f5f5f5; 
+  --lm-color-bg-accent: #eeeeee;
+  
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-xxl: 1.5rem;
+  
+  --bg-btn-delete: #ff5a5a;
+  --bg-btn-actualizar: #5d6aff;
+
+  --border-succes: #5cb85c;
+  --border-error: #d9534f;
+  --border-warning: #f0ad4e;
+}

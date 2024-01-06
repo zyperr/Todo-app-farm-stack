@@ -1,0 +1,160 @@
+@import url("./styles/base/variables.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: var(--color-secondary);
+}
+a.active{
+    color: var(--color-primary);
+}
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: var(--dm-color-text);
+}
+ul{
+    list-style: none;
+}
+input{
+    outline: none;
+    border: none;
+
+}
+textarea{
+    resize: none;
+    outline: none;
+    border: none;
+    height: 150px;
+}
+.container-tasks{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: .625rem;
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.search{
+    width: 300px;
+    padding: 7px 26px;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: .9375rem;
+}
+.wrapper-search{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    margin: 15px;
+}
+.wrapper-search label{
+    font-size: var(--font-size-md);
+    font-weight: lighter;
+    margin-bottom: 7px;
+}
+
+.icon{
+    color: var(--dm-color-text);
+    font-size: var(--font-size-xxl);
+
+}
+.error-accent{
+    color: var(--bg-btn-delete);
+}
+.error-link{
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+.error-title{
+    font-size: 200px;
+}
+.container-title{
+    margin: 30px;
+}
+.--delete{
+    color: var(--color-secondary);
+}
+
+.--edit{
+    color: var(--color-primary);
+}
+.--check{
+    color: var(--border-succes);
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background: var(--dm-color-bg-primary);
+        color: var(--dm-color-text);
+    }
+    input{
+        color: var(--dm-color-text);
+        font-weight: 500;
+    }
+    textarea{
+        color: var(--dm-color-text);
+        font-weight: 500;
+    }
+    .search{
+        color: var(--dm-color-text);
+        background: var(--dm-color-bg-accent);
+    }
+    .search::placeholder{
+        color: var(--dm-color-text-secondary);
+    }
+    .error-link{
+        background: var(--dm-color-bg-accent);
+        color: var(--dm-color-text);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .error-title{
+        font-size: 150px;
+    }
+    body{
+        display: flex;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: var(--lm-color-bg-secondary);
+        color: var(--lm-color-text);
+    }
+    input{
+        color: var(--lm-color-text);
+    }
+    textarea{
+        color: var(--lm-color-text);
+    }
+    .search{
+        color: var(--lm-color-text);
+        background: var(--color-primary);
+    }
+    .search::placeholder{
+        color: var(--lm-color-text-secondary);
+    }
+}
+
